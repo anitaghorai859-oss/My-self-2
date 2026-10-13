@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arnab Ghorai - Portfolio & Projects</title>
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --card-bg: #1e293b;
+            --accent-color: #38bdf8;
+            --accent-hover: #0284c7;
+            --text-color: #f8fafc;
+            --text-muted: #94a3b8;
+            --border-color: #334155;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            padding: 40px 20px;
+            background: var(--card-bg);
+            border-radius: 16px;
+            margin-bottom: 30px;
+            border: 1px solid var(--border-color);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+        }
+
+        .profile-img {
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid var(--accent-color);
+            margin-bottom: 20px;
+            box-shadow: 0 0 20px rgba(56, 189, 248, 0.4);
+        }
+
+        h1 {
+            color: var(--accent-color);
+            font-size: 2.2rem;
+            margin-bottom: 5px;
+        }
+
+        .subtitle {
+            color: var(--text-muted);
+            font-size: 1.1rem;
+            margin-bottom: 15px;
+        }
+
+        .badge {
+            display: inline-block;
+            background: rgba(56, 189, 248, 0.1);
+            color: var(--accent-color);
+            padding: 6px 16px;
+            border-radius: 20px;
+            border: 1px solid var(--accent-color);
+            font-size: 0.9rem;
+            font-weight: 600;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            margin-bottom: 30px;
+        }
+
+        .card {
+            background: var(--card-bg);
+            padding: 25px;
+            border-radius: 16px;
+            border: 1px solid var(--border-color);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+
+        .card h2 {
+            color: var(--accent-color);
+            font-size: 1.4rem;
+            margin-bottom: 15px;
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 8px;
+        }
+
+        .info-list {
+            list-style: none;
+        }
+
+        .info-list li {
+            margin-bottom: 12px;
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 1px dashed var(--border-color);
+            padding-bottom: 6px;
+        }
+
+        .info-list li strong {
+            color: var(--text-muted);
+        }
+
+        .project-card {
+            background: var(--card-bg);
+            border-radius: 16px;
+            border: 1px solid var(--border-color);
+            padding: 25px;
+            margin-bottom: 25px;
+        }
+
+        .project-card h3 {
+            color: var(--accent-color);
+            margin-bottom: 10px;
+            font-size: 1.3rem;
+        }
+
+        .project-card p {
+            color: var(--text-muted);
+            margin-bottom: 15px;
+        }
+
+        .totp-box {
+            background: #090d16;
+            padding: 20px;
+            border-radius: 12px;
+            text-align: center;
+            border: 1px solid var(--border-color);
+        }
+
+        .totp-code {
+            font-size: 2.5rem;
+            font-family: monospace;
+            letter-spacing: 6px;
+            color: #4ade80;
+            margin: 10px 0;
+            font-weight: bold;
+        }
+
+        .timer-bar {
+            height: 6px;
+            background: var(--border-color);
+            border-radius: 3px;
+            overflow: hidden;
+            margin-top: 10px;
+        }
+
+        .timer-progress {
+            height: 100%;
+            background: #4ade80;
+            width: 100%;
+            transition: width 1s linear;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            border-top: 1px solid var(--border-color);
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Header / Personal Profile -->
+        <header>
+            <img src="your_photo.jpg" alt="Arnab Ghorai" class="profile-img">
+            <h1>অর্ণব ঘোরই (Arnab Ghorai)</h1>
+            <p class="subtitle">Student & Web Developer</p>
+            <span class="badge">Class 8 - Section A - Roll 22</span>
+        </header>
+
+        <!-- Personal & Academic Details -->
+        <div class="grid">
+            <div class="card">
+                <h2>ব্যক্তিগত তথ্য (Personal Details)</h2>
+                <ul class="info-list">
+                    <li><strong>নাম:</strong> <span>অর্ণব ঘোরই</span></li>
+                    <li><strong>বাবার নাম:</strong> <span>অনুপ ঘোরই</span></li>
+                    <li><strong>মায়ের নাম:</strong> <span>আনিতা ঘোরই</span></li>
+                    <li><strong>ফোন নম্বর:</strong> <span>9836139546</span></li>
+                    <li><strong>ঠিকানা:</strong> <span>জগন্নাথপুর, দাসপুর, পশ্চিম মেদিনীপুর</span></li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h2>বিদ্যালয়ের তথ্য (School Details)</h2>
+                <ul class="info-list">
+                    <li><strong>স্কুল:</strong> <span>গৌড়া সোনামুই কুঞ্জ বিহারী আদর্শ শিক্ষায়তন (H.S)</span></li>
+                    <li><strong>শ্রেণী:</strong> <span>Class 8</span></li>
+                    <li><strong>সেকশন:</strong> <span>A</span></li>
+                    <li><strong>রোল নম্বর:</strong> <span>22</span></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Projects Showcase -->
+        <h2 style="color: var(--accent-color); margin-bottom: 20px;">আমার তৈরি প্রজেক্টসমূহ (My Projects)</h2>
+
+        <!-- PassShield Project Card -->
+        <div class="project-card">
+            <h3>১. PassShield (পাসওয়ার্ড সুরক্ষা ও জেনারেটর)</h3>
+            <p>আপনার অ্যাকাউন্ট সুরক্ষিত রাখতে শক্তিশালী এবং ইউনিক পাসওয়ার্ড জেনারেট করার জন্য তৈরি একটি টুল।</p>
+        </div>
+
+        <!-- TOTP Authenticator Project Card -->
+        <div class="project-card">
+            <h3>২. 2-Step Verification (TOTP Authenticator)</h3>
+            <p>Time-based One-Time Password (TOTP) সিকিউরিটি সিস্টেম যা সময়ের সাথে সাথে ৬ ডিজিটের সিকিউরিটি কোড পরিবর্তন করে।</p>
+            
+            <div class="totp-box">
+                <span style="color: var(--text-muted); font-size: 0.9rem;">লাইভ টিওটিপি সিকিউরিটি কোড (Live Demo)</span>
+                <div class="totp-code" id="totpCode">849 201</div>
+                <div class="timer-bar">
+                    <div class="timer-progress" id="timerProgress"></div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            © 2026 Arnab Ghorai | All Rights Reserved
+        </footer>
+    </div>
+
+    <script>
+        // Simulated TOTP Code Generator Demo
+        function generateTOTP() {
+            const code = Math.floor(100000 + Math.random() * 900000).toString();
+            return code.substring(0, 3) + ' ' + code.substring(3);
+        }
+
+        let timeLeft = 30;
+        const totpElement = document.getElementById('totpCode');
+        const progressBar = document.getElementById('timerProgress');
+
+        setInterval(() => {
+            timeLeft--;
+            const percentage = (timeLeft / 30) * 100;
+            progressBar.style.width = percentage + '%';
+
+            if (timeLeft <= 0) {
+                timeLeft = 30;
+                totpElement.innerText = generateTOTP();
+            }
+        }, 1000);
+    </script>
+</body>
+</html>
